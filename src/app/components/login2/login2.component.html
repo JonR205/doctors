@@ -1,0 +1,10 @@
+<mat-form-field appearance="fill">
+    <input matInput placeholder="Username" [(ngModel)]="username">
+  </mat-form-field>
+  <br/>
+  <mat-form-field appearance="fill">
+    <input matInput placeholder="Password" [(ngModel)]="password">
+</mat-form-field>
+<br/>
+<button (click)="ui.tryLogin(username,password)"> Login </button>
+<button mat-flat-button color="primary" (click)="ui.startRegister()" style="margin-left: 1px;"> Register </button>
